@@ -1,0 +1,67 @@
+.wallet-container {
+    padding: 20px;
+    background-color: #ffffff; /* White background for a light theme */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    text-align: center;
+    max-width: 400px;
+    margin: auto; /* Center the container horizontally */
+    position: absolute; /* Positioning for vertical centering */
+    top: 50%; /* Move the top of the container to the middle */
+    left: 50%; /* Move the left side of the container to the middle */
+    transform: translate(-50%, -50%); /* Adjust position to center the container exactly */
+    transition: all 0.3s ease; /* Smooth transition for interactive elements */
+}
+
+.wallet-container h3 {
+    margin: 0;
+    font-size: 1.75em;
+    color: #333333; /* Dark gray for the title */
+    margin-bottom: 15px;
+}
+
+.wallet-balance {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #428040; /* Blue color for balance display */
+    margin-top: 15px;
+}
+
+.wallet-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.wallet-container input[type="number"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+.wallet-container input[type="number"]:focus {
+    border-color: #2196f3; /* Highlight input on focus */
+    outline: none;
+}
+
+.wallet-container button[type="submit"] {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    background-color: #4caf50; /* Green background for the submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wallet-container button[type="submit"]:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+.wallet-container button[type="submit"]:active {
+    background-color: #2e7d32; /* Even darker green on click */
+}

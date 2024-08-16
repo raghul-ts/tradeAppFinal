@@ -1,0 +1,60 @@
+/* StockList.css */
+
+.stock-list {
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust as needed */
+}
+
+.stock-list h3 {
+  color: #ffffff; /* Light color for header */
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  border-bottom: 2px solid #29773b;
+  padding-bottom: 10px;
+}
+
+.stock-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stock-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.stock-item:hover {
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.stock-info h4 {
+  margin: 0;
+  color: #ffffff; /* Light color for stock symbol */
+  font-size: 18px;
+}
+
+.stock-info p {
+  margin: 0;
+  color: #aaaaaa; /* Light color for price */
+  font-size: 14px;
+}
+
+.stock-item .price {
+  color: #4caf50; /* Green color for price */
+  font-size: 16px;
+  font-weight: bold;
+}

@@ -1,0 +1,184 @@
+/* General Styles */
+.dashboard {
+  background-color: #fbfbfb; /* Light background */
+  color: #333333; /* Dark text color */
+  min-height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(160deg, #343030 0%, rgb(0, 0, 0) 100%);
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+  padding: 20px;
+  gap: 20px; /* Add spacing between stock chart and holdings */
+}
+
+.stock-chart {
+  flex: 2;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow: hidden; /* Hide overflow if needed */
+}
+
+.stock-list {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow */
+  overflow-y: auto; /* Allows scrolling if the list is too long */
+}
+
+.stock-list h2 {
+  margin-bottom: 20px;
+}
+
+.stock-item {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.stock-item:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stock-item.selected {
+  background-color: #d0d0d0;
+}
+
+.stock-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock-symbol {
+  font-weight: bold;
+}
+
+.stock-price {
+  font-weight: bold;
+}
+
+.financial-holdings {
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.financial-holdings h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.holdings-table th,
+.holdings-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.holdings-table th {
+  background-color: #f0f0f0;
+}
+
+.profit {
+  color: #4CAF50; /* Green for profit */
+}
+
+.loss {
+  color: #F44336; /* Red for loss */
+}
+
+.buy-button,
+.sell-button,
+.exit-all-button {
+  background-color: #007bff; /* Blue color for buttons */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px; /* Reduced padding */
+  border-radius: 8px; /* Increased border radius */
+  cursor: pointer;
+  font-size: 16px; /* Reduced font size */
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 5px;
+}
+
+.buy-button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px);
+}
+
+.sell-button {
+  background-color: #FF5722; /* Deep orange for sell button */
+}
+
+.sell-button:hover {
+  background-color: #E64A19; /* Darker orange for hover effect */
+  transform: translateY(-2px);
+}
+
+.exit-all-button {
+  background-color: #F44336; /* Red for exit all button */
+}
+
+.exit-all-button:hover {
+  background-color: #D32F2F; /* Darker red for hover effect */
+}
+
+.buttons-container {
+  text-align: center; /* Center-align buttons */
+  margin-top: 20px;
+}
+
+.quantity-input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  color: #333333;
+  width: 120px;
+}
+
+.current-holdings {
+  margin-top: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.current-holdings h4 {
+  margin-bottom: 10px;
+}
+
+.buy-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
